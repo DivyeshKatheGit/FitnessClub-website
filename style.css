@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css?family=Muli|Overpass&display=swap');
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+.main
+{
+    background-color: rgb(255, 98, 50);
+    clip-path: polygon(50% 0%, 100% 0, 100% 97%, 70% 90%, 0 100%, 0 0);
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    clip-path: polygon(27% 0, 100% 0, 100% 85.5%, 0% 100%, 0 100%, 0 4%);
+    background: url(./assets/man-holding-black-dumbbell-1229356.jpg);
+    background-size: cover;
+}
+nav
+{
+    background-color: transparent!important;
+    color: whitesmoke!important;
+
+}
+.navbar-brand
+{
+    position: relative;
+    color: #dbdbdb;
+    font-size: 1.3rem;
+}
+.navbar-brand::before
+{
+    position: absolute;
+    top: 85%;
+    content: '';
+    width: 90px;
+    height: 2px;
+    background-color: rgb(255, 98, 50);
+}
+.navbar-brand:hover
+{
+    color: #dbdbdb;
+}
+.navbar-brand span
+{
+    font-weight: 700;
+    font-size: 1.7rem;
+    color: #eeeeee;
+}
+.nav-item
+{
+    margin: 0 12px;
+}
+.nav-link
+{
+    position: relative;
+    color: whitesmoke;
+    font-size: 1rem;
+    transition: .6s;
+    padding: 0;
+}
+.nav-link:hover
+{
+    color: whitesmoke;
+}
+.nav-link::before
+{
+    position: absolute;
+    bottom: 0;
+    content: '';
+    width: 0px;
+    height: 3px;
+    background-color: rgb(255, 92, 43);
+    transition: .5s;
+}
+.nav-link:hover:before
+{
+    width: 80%;
+}
+.header-text
+{
+    padding-left: 80px;
+    width: 40%;
+    margin-top: 70px;
+    color: whitesmoke;
+    font-family: 'Muli',sans-serif;
+}
+.intro-text .welcome,
+.header-text .opt 
+{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: rgb(255, 98, 50);
+}
+.header-text p
+{
+    padding-right: 80px;
+}
+.header-text a
+{
+    margin-top: 20px;
+    display: inline-block;
+    color: whitesmoke;
+    background-color: rgb(255, 82, 29);
+    text-decoration: none;
+    padding: 10px 20px;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+}
+.intro, .workout
+{
+    margin: 150px 0 100px;
+}
+.introimg
+{
+    width: 300px;
+    height: 500px;
+    background-size: cover;
+    margin: 10px 20px;
+    transform: skewY(-5deg);
+    transition: .5s;
+}
+.i1
+{
+    background-image: url(./assets/man-doing-pull-ups-1865131.jpg);
+}
+.i2
+{
+    background-image: url(./assets/man-lifting-weights-3289711.jpg);
+}
+.intro-text
+{
+    padding: 0px 60px;
+}
+.intro-text .welcome
+{
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: rgb(255, 98, 50);
+}
+.intro-text h3
+{
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+.intro-text a
+{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: rgb(255, 92, 43);
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.classes
+{
+    padding: 0px 0 150px;
+    width: 100%;
+    background-color: black;
+    clip-path: polygon(70% 0, 100% 5%, 100% 95%, 70% 90%, 0 100%, 0 10%);
+}
+.top-row
+{
+    display: flex;
+    padding-top: 100px;
+}
+.top-row .tr-1
+{
+    margin-left: 150px;
+}
+.top-row .tr-1 h5
+{
+    color: #c9c9c9;
+}
+.top-row .tr-1 h2
+{
+    color: whitesmoke;
+}
+.top-row .tr-2
+{
+    margin-right: 200px;
+    margin-left: auto;
+}
+.top-row .tr-2 a
+{
+    padding: 15px 25px;
+    background-color:  rgb(255, 82, 29);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 500;
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+    color: whitesmoke;
+}
+
+.classcol
+{
+    margin: 0 40px;
+}
+ .class-img,.trainer-img
+ {
+     position: relative;
+     width: 300px;
+     height: 400px;
+     background-size: cover;
+     background-position: center;
+     transform: skewY(-3deg);
+     border: 6px solid whitesmoke;
+     transition: .5s ease-in-out;
+     cursor: pointer;
+ }
+ .class-img:hover
+ {
+     border-color: rgb(255, 92, 43);
+ }
+ .ci1
+ {
+     background-image: url(./assets/man-lifting-dumbells-3014237.jpg);
+ }
+ .ci2
+ {
+     background-image: url(./assets/man-sitting-on-bench-press-2922455.jpg);
+ }
+ .ci3
+ {
+     background-image: url(./assets/man-wearing-gray-drawstring-pants-2794011.jpg);
+ }
+ .ci4
+ {
+     background-image: url(./assets/person-lifting-dumbbell-1483217.jpg);
+ }
+ .class-text
+ {
+     margin-top: 30px;
+     color: whitesmoke;
+ }
+ .class-text p
+{
+    color: rgb(255, 92, 43);
+}
+
+ .workout .w1
+ {
+     background-image: url(./assets/active-adult-biceps-body-416809.jpg);
+ }
+ .workout .w2
+ {
+     background-image: url(./assets/man-pushing-cart-with-weight-plates-1552104.jpg);
+ }
+
+ .workout-items h2
+ {
+     font-size: 1.4rem;
+ }
+.workout-items p
+{
+    color: #445544;
+}
+.trainer-img::before
+{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(255, 92, 43,.6);
+    transition: height .6s;
+}
+.trainer-img:hover:before
+{
+    height: 100%;
+}
+
+.fitness-plans
+{
+    margin: 80px 0;
+    text-align: center;
+}
+.fitness-plans .welcome
+{
+    font-size: 1.4rem;
+    color: rgb(255, 82, 29);
+}
+.fitness-plans h3
+{
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+.plan-cards
+{
+    width: 100%;
+}
+.plan-cards .pc
+{
+    position: relative;
+    width: 400px!important;
+    height: 450px;
+    margin: 80px 5px;
+    padding-top: 40px;
+    background-color: transparent;
+    color: whitesmoke;
+}
+.plan-cards .pc .last-text
+{
+    margin-top: 20px;
+}
+.plan-cards .pc h2
+{
+    font-weight: 800;
+    font-size: 3rem;
+}
+.plan-cards .pc::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.plan-cards .pc1::before,.plan-cards .pc3::before
+{
+    background-color: black;
+    transform: skewY(5deg);
+}
+.plan-cards .pc2::before
+{
+    background-color: rgb(255, 82, 29);
+    transform: skewY(-5deg);
+}
+
+.plan-cards .pc a
+{
+    margin-top: 10px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: whitesmoke;
+}
